@@ -35,4 +35,10 @@ public class ShowCompetitorActivity extends AppCompatActivity {
         viewHealthPoints.setText(String.valueOf(competitor.getHealthPoints()));
         viewMartialArts.setText(competitor.getMartialArt().getName());
     }
+
+    public void openHome(View view)
+    {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(competitor.getHomeURL()));
+        startActivity(browserIntent);
+    }
 }

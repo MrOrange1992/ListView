@@ -18,19 +18,21 @@ public class Competitors implements Serializable
     protected int weight;
     protected int healthPoints;
     protected MartialArt martialArt;
+    protected String homeURL;
     // -----------------------------------------------------------------------------------------------------------------
 
 
 
     // CONSTRUCTOR
     // -----------------------------------------------------------------------------------------------------------------
-    public Competitors(String name, int size, int weight, int healthPoints, MartialArt martialArt)
+    public Competitors(String name, int size, int weight, int healthPoints, MartialArt martialArt, String homeURL)
     {
         this.name = name;
         this.size = size;
         this.weight = weight;
         this.healthPoints = healthPoints;
         this.martialArt = martialArt;
+        this.homeURL = homeURL;
     }
     // -----------------------------------------------------------------------------------------------------------------
 
@@ -52,6 +54,9 @@ public class Competitors implements Serializable
 
     public MartialArt getMartialArt() { return martialArt; }
     public void setMartialArt(MartialArt martialArt) { this.martialArt = martialArt; }
+
+    public String getHomeURL() { return homeURL; }
+    public void setHomeURL(String homeURL) { this.homeURL = homeURL; }
     // -----------------------------------------------------------------------------------------------------------------
 
 

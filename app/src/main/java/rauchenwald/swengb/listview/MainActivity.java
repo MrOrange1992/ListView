@@ -61,10 +61,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         );
 
         competitorsList = new ArrayList<>();
-        competitorsList.add(new Competitors("Conor McGregor", 180, 150, 20, mma));
-        competitorsList.add(new Competitors("Royce Gracie", 175, 145, 14, bjj));
-        competitorsList.add(new Competitors("Bruce Lee", 165, 140, 24, mma));
-        competitorsList.add(new Competitors("Yip Man", 160, 120, 18, wingChun));
+        competitorsList.add(new Competitors("Conor McGregor", 180, 150, 20, mma, "https://de.wikipedia.org/wiki/Conor_McGregor"));
+        competitorsList.add(new Competitors("Royce Gracie", 175, 145, 14, bjj, "https://de.wikipedia.org/wiki/Royce_Gracie"));
+        competitorsList.add(new Competitors("Bruce Lee", 165, 140, 24, mma, "https://de.wikipedia.org/wiki/Bruce_Lee"));
+        competitorsList.add(new Competitors("Yip Man", 160, 120, 18, wingChun, "https://de.wikipedia.org/wiki/Yip_Man"));
 
 
         myAdapter = new CustomAdapter(this,competitorsList);
